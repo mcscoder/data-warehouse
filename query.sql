@@ -14,6 +14,7 @@ select
 from
     Weather_Fact wf;
 
+-- Average temperature each month
 SELECT
     year,
     month,
@@ -28,6 +29,7 @@ ORDER BY
     year,
     month;
 
+-- Average precipitation 
 SELECT
     ld.Location,
     AVG(Precipitation_mm) AS avg_precipitation

@@ -41,6 +41,6 @@ weather_fact = df[
 engine = create_engine("mysql://root:mcs@localhost/weather_db")
 
 # Nạp dữ liệu vào các bảng
-date_dim.to_sql('Date_Dim', con=engine, if_exists='replace', index=False)
-location_dim.to_sql('Location_Dim', con=engine, if_exists='replace', index=False)
-weather_fact.to_sql('Weather_Fact', con=engine, if_exists='replace', index=False)
+date_dim.to_sql("Date_Dim", con=engine, if_exists="replace", index=False)
+location_dim.to_sql("Location_Dim", con=engine, if_exists="replace", index=False)
+weather_fact.to_sql("Weather_Fact", con=engine, if_exists="replace", index=False)
